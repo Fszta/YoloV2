@@ -116,6 +116,13 @@ backup = backup/
 ...
     
 ``` 
+Modify cfg/yolov2-tiny-voc.cfg as follow : 
+<ul>
+    <li>batch = 64 , line 3</li>
+    <li>subdivisions = 8, line 4</li>
+    <li>classes = 1, number of categories in your dataset </li>
+    <li>filters = (5 + classes)*5, 30 in my case</li>
+</ul>
 
 <p>
     <h3>Train Darknet</h3>
